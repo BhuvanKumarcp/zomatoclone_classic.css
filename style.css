@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.hero {
+.herosec {
     background: url(images/heroSectionBackground.png);
     min-height: 60vh;
     background-size: cover;
@@ -41,6 +41,54 @@
     display: none;
 }
 
+.herocontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: calc(60vh-60px);
+}
+
+.heroconlogo {
+    width: 200px;
+    height: auto;
+}
+
+.herotitle {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+}
+
+.herocontainerinput {
+    background-color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    border-radius: 12px;
+}
+
+.containerinputlocation,
+.containerinputsearch {
+    padding: 5px;
+    border: none;
+
+}
+
+.containerinputlocation {
+    width: 35%;
+    border-right: 2px solid #e0e0e0;
+}
+
+.containerinputsearch {
+    width: 65%;
+}
+
 @media only screen and (max-width:600px) {
     .navcontainer {
         display: flex;
@@ -48,5 +96,32 @@
 
     .link {
         display: none;
+    }
+
+    .navigation {
+        padding: 16px;
+    }
+
+    .herocontainer {
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .containerinputlocation,
+    .containerinputsearch {
+        padding: 15px;
+        border-radius: 10px;
+        width: 95%;
+    }
+
+    .herocontainerinput {
+        height: calc(80vh-60px);
+    }
+
+    .herotitle {
+        font-size: 20px;
+        width: 95%;
+
     }
 }
