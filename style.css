@@ -230,6 +230,17 @@
     font-weight: 400;
 }
 
+.gettheapp {
+    margin: 2rem auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
 @media only screen and (max-width:600px) {
     .navcontainer {
         display: flex;
