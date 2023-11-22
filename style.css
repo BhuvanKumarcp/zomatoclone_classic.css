@@ -231,14 +231,20 @@
 }
 
 .gettheapp {
-    margin: 2rem auto;
-    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.7rem;
+    background-color: rgb(255, 255, 247);
+    width: 60%;
+}
+
+.gettheapp .semicontainer {
+    width: 35%;
+    gap: 1.5rem;
+}
+
+.gettheapp .semicontainer .left {
+    width: 100%;
 }
 
 @media only screen and (max-width:600px) {
