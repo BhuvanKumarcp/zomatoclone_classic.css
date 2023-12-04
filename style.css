@@ -89,7 +89,42 @@
     width: 65%;
 }
 
+@media only screen and (max-width:600px) {
+    .navcontainer {
+        display: flex;
+    }
 
+    .link {
+        display: none;
+    }
+
+    .navigation {
+        padding: 16px;
+    }
+
+    .herocontainer {
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .containerinputlocation,
+    .containerinputsearch {
+        padding: 15px;
+        border-radius: 10px;
+        width: 95%;
+    }
+
+    .herocontainerinput {
+        height: calc(80vh-60px);
+    }
+
+    .herotitle {
+        font-size: 20px;
+        width: 95%;
+
+    }
+}
 
 .offercardcontainer {
     margin: 2rem auto;
@@ -237,21 +272,22 @@
     background-color: rgb(255, 255, 247);
     width: 100%;
     padding-top: 50px;
+    height: 0%;
 }
 
 .image {
-    display: flex;
+    display: flexbox;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .image img {
-    width: 60vh;
-    height: auto;
+    width: 45vh;
+    height: 0%;
     position: relative;
     object-fit: cover;
     object-position: center;
-    margin: auto;
+    margin: 0%;
 }
 
 .rightcontainer {
@@ -259,6 +295,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.9rem;
+    width: 40%;
 }
 
 .rightcontainer h1 {
@@ -333,39 +370,162 @@
     width: 30%;
 }
 
-@media only screen and (max-width:600px) {
-    .navcontainer {
-        display: flex;
+@media only screen and (max-width: 1200px) {
+
+    .gettheapp,
+    .image .gettheapp,
+    .rightcontainer {
+        flex: 1;
     }
 
-    .link {
-        display: none;
+    .gettheapp,
+    .rightcontainer {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .gettheapp {
+        padding: 2rem;
     }
 
-    .navigation {
-        padding: 16px;
+    .gettheapp,
+    .image,
+    .rightcontainer {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .gettheapp {
+        padding: 3rem 0;
     }
 
-    .herocontainer {
+    .gettheapp,
+    .image,
+    .rightcontainer {
+        width: 80%;
         flex-direction: column;
-        background-color: transparent;
-        width: 100%;
     }
+}
 
-    .containerinputlocation,
-    .containerinputsearch {
-        padding: 15px;
-        border-radius: 10px;
-        width: 95%;
+.footer {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.footer_section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer_section1 img {
+    width: 120px;
+}
+
+.section1__buttonContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.section1__buttonContainer button {
+    padding: 5px;
+    width: 90px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation_container {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+
+.link__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.link__container h5 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footer__link:hover {
+    color: black;
+}
+
+.social__links_container button {
+    background-color: black;
+    /* color: white; */
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.social__links_container button i {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.footer__section_logos {
+    width: 100%;
+}
+
+.termsNConditions {
+    width: 90%;
+    margin: auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid gray;
+    color: gray;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .navigation_container {
+        grid-template-columns: repeat(3, 1fr);
     }
+}
 
-    .herocontainerinput {
-        height: calc(80vh-60px);
+@media only screen and (max-width: 450px) {
+    .navigation_container {
+        grid-template-columns: repeat(2, 1fr);
     }
+}
 
-    .herotitle {
-        font-size: 20px;
-        width: 95%;
-
+@media only screen and (max-width: 280px) {
+    .navigation_container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
