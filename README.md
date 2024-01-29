@@ -1,5 +1,5 @@
 # Project_1
-## zomato clone
+## zomato clone using classical css
 # hello
 
-## this will ne new setup branch
+## this will new  branch
